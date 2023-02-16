@@ -3,22 +3,22 @@
 class Film {
 
     private string $_TitreFilm;
-    private DateTime $_DateSortie;
-    private Int $_DureeFilm; 
+    private  $_DateSortie;
+    private  $_DureeFilm; 
     private $_Casting;
-    private  $_Realisateur; 
+    private   $_Realisateur; 
     private  $_Genre; 
     
   
 
 
 
-public function __construct (string $_TitreFilm,DateTime $_DateSortie, Int $_DureeFilm, $_Casting, Realisateur $_Realisateur,  $_Genre )
+public function __construct (string $_TitreFilm, $_DateSortie,  $_DureeFilm,  Realisateur $_Realisateur,  $_Genre )
     {
         $this -> _TitreFilm=$_TitreFilm;
         $this -> _DateSortie = $_DateSortie;
         $this -> _DureeFilm = $_DureeFilm;  
-        $this-> _Casting = $_Casting;
+        // $this-> _Casting = $_Casting;
         $this -> _Realisateur=$_Realisateur;
         $this ->_Genre=$_Genre;
 
@@ -102,10 +102,16 @@ public function __construct (string $_TitreFilm,DateTime $_DateSortie, Int $_Dur
 
     //FONCTIONS 
 
+
+
   
 public function AfficherInfoFilm()
     {
-        
+        echo "<br> Informations du film : <br> <br>" 
+        .$this -> _TitreFilm. "<br> Sortie : " 
+        .$this -> _DateSortie. "<br> Durée : " .$this -> _DureeFilm. "<br> Réalisateur : "
+        .$this->_Realisateur -> get_Nom(). " " .$this->_Realisateur  -> get_Prenom(). "<br> Genre : " . $this->_Genre -> get_NomGenre() ;
+
     }
 
 
