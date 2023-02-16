@@ -13,14 +13,14 @@ class Genre {
 
     public function get_NomGenre ()
     {
-        $this -> _NomGenre;
+        return  $this -> _NomGenre;
     }
 
     //SETTER
 
     public function set_NomGenre ($_NomGenre)
     {
-        return $this -> _NomGenre=$_NomGenre;
+       $this -> _NomGenre=$_NomGenre;
     }
 }
 
