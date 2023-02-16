@@ -29,7 +29,7 @@ public function get_Nom ()
 public function get_Prenom ()
     
     {
-    return $this -> Prenom;        
+    return $this -> _Prenom;        
     }
 
  public function get_Sexe ()
