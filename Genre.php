@@ -23,3 +23,4 @@ class Genre {
         return $this -> _NomGenre=$_NomGenre;
     }
 }
+
