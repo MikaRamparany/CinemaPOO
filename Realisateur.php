@@ -5,7 +5,7 @@
 class Realisateur extends PersonneMere
 {
 
-    private array $_AllFilms;
+    private array $_AllFilms=[];
 
 
     public function __construct(string $_Nom, string $_Prenom, string $_Sexe, $_DateNaissance)
@@ -32,15 +32,16 @@ class Realisateur extends PersonneMere
 
     public function afficherFilm()
     {
-        echo " Les films réalisés par ". $this ." : <br>";
+        $result = " Les films réalisés par ". $this ." : <br>";
         foreach($this->_AllFilms as $Film)
         {
-            echo $Film . "<br>";
+           $result .= $Film . "<br>";
         }
+        return $result;
     }
     public function __toString()
     {
-        $result = $this->_Prenom . " " . $this->_Nom;
+        $result = $this->get_Prenom() . " " . $this->get_Nom();
         return $result;
     }
 
