@@ -5,7 +5,7 @@ class PersonneMere {
     private string $_Nom;
     private string $_Prenom;
     private string $_Sexe;
-    private DateTime $_DateNaissance; 
+    private  $_DateNaissance; 
 
 
 
