@@ -44,15 +44,15 @@ $FILM8 = new Film ( "Memento", "07-09-2000", "113min", $Rea2, $G3);
 $ROLFILM1PA = new Role ("Paul Atréides"); // Nb: joué par Kyle MacLahchlan
 $ROLFILM1DK = new Role ("Dr Kynes"); // Nb: joué par Max von Sydow
 
-$ROLFILM3VD = new Role ("Domnique"); // Nb: joué par Vin Diesel 
+$ROLFILM3DT = new Role ("Domnique"); // Nb: joué par Vin Diesel 
 $ROLFILM3OB = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
-$ROLFILM4VD = new Role ("Domnique"); // Nb: joué par Vin Diesel 
+$ROLFILM4DT = new Role ("Domnique"); // Nb: joué par Vin Diesel 
 $ROLFILM4OB = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
-$ROLFILM5VD = new Role ("Domnique"); // Nb: joué par Vin Diesel 
+$ROLFILM5DT = new Role ("Domnique"); // Nb: joué par Vin Diesel 
 $ROLFILM5OB = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
 
-$ROLFILM6LD = new Role ("Dom Cobb"); // Nb: Di Caprio
-$ROLFILM6CM = new Role ("Rob Fischer"); // Nb:Cillian Murphy
+$ROLFILM6DC = new Role ("Dom Cobb"); // Nb: Di Caprio
+$ROLFILM6RF = new Role ("Rob Fischer"); // Nb:Cillian Murphy
 
 
 // ACTEURS 
@@ -69,13 +69,13 @@ $MS = new Acteur("Sydow", "Max", "Homme", "08-03-2020");
 //CASTINGS 
 
 $CFLM1KM = new Casting ($FILM1, $ROLFILM1PA,$KM );
-$CFLM1MS = new Casting ($FILM1, $ROLFILM1DK, $MS );
+$CFLM1MS = new Casting ($FILM1, $ROLFILM1DK,$MS );
 
-$CFLM3DT = new Casting ($FILM3, $ROLFILM3VD, $VD);
-$CFLM3OB = new Casting ($FILM3, $ROLFILM3, $PW);
+$CFLM3DT = new Casting ($FILM3, $ROLFILM3DT, $VD);
+$CFLM3OB = new Casting ($FILM3, $ROLFILM3OB, $PW);
 
-$CFLM4DT = new Casting ($FILM4, $ROLFILM4, $VD);
-$CFLM4OB = new Casting ($FILM4, $ROLFILM3, $PW);
+$CFLM4DT = new Casting ($FILM4, $ROLFILM4DT, $VD);
+$CFLM4OB = new Casting ($FILM4, $ROLFILM4OB, $PW);
 
 
 // TESTS : 
@@ -92,3 +92,4 @@ echo  $Rea3 -> afficherFilmRea(); // Afficher les films du réalisateur
 echo $G2 -> afficherFilmparGenre();  // Afficher lees films par genre
 
 // echo $G3 -> afficherFilmparGenre(); 
+
