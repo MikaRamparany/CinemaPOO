@@ -109,8 +109,8 @@ public function __construct (string $_TitreFilm, $_DateSortie,  $_DureeFilm,  Re
   
 public function AfficherInfoFilm()
     {
-        echo "<br> Informations du film : <br> <br>" 
-        .$this -> _TitreFilm. "<br> Sortie : " 
+        echo "<br> <br>Informations du film " 
+        .$this -> _TitreFilm. "<br> <br>Sortie : " 
         .$this -> _DateSortie. "<br> Durée : " .$this -> _DureeFilm. "<br> Réalisateur : "
         .$this->_Realisateur -> get_Nom(). " " .$this->_Realisateur  -> get_Prenom(). "<br> Genre : " . $this->_Genre -> get_NomGenre() ;
 
