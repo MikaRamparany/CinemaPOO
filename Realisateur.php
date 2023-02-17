@@ -39,6 +39,8 @@ class Realisateur extends PersonneMere
         }
         return $result;
     }
+
+    
     public function __toString()
     {
         $result = $this->get_Prenom() . "  " . $this->get_Nom();
