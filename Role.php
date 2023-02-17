@@ -36,7 +36,14 @@ class Role {
         $this->_Casting[] = $Casting;
     }
 
-//! section à compléyer après avoir fait la classe casting 
+    public function AfficherCasting() 
+    {
+
+    foreach ($this->_Casting as $Casting) 
+    
+        echo  " Distribution des rôles dans le film ".$Casting->get_Film(). "<br" . $Casting->get_Acteur(). " : " . $Casting -> get_Acteur() ."<br>";
+    }
+
 
 
     public function __toString()
