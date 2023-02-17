@@ -41,6 +41,33 @@ $FILM7 = new Film ( "Transcendance", "25-06-2014" ,"120min",$Rea2, $G3);
 $FILM8 = new Film ( "Memento", "07-09-2000", "113min", $Rea2, $G3);
 //--------------------------------------
 
+// ROLES FILM 
+
+$ROLFILM1 = new Role ("Paul Atréides"); // Nb: joué par Kyle MacLahchlan
+$ROLFILM1 = new Role ("Dr Kynes"); // Nb: joué par Max von Sydow
+
+$ROLFILM3 = new Role ("Domnique"); // Nb: joué par Vin Diesel 
+$ROLFILM3 = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
+$ROLFILM4 = new Role ("Domnique"); // Nb: joué par Vin Diesel 
+$ROLFILM4 = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
+$ROLFILM5 = new Role ("Domnique"); // Nb: joué par Vin Diesel 
+$ROLFILM5 = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
+
+$ROLFILM6 = new Role ("Dom Cobb"); // Nb: Di Caprio
+$ROLFILM6 = new Role ("Rob Fischer"); // Nb:Cillian Murphy
+
+
+// ACTEURS 
+
+$VD = new Acteur( "Vin", "Diesel", "Homme", "18-07-1967");
+$PW = new Acteur( "Walker", "Paul", "Homme", "30-11-1977"); 
+
+$LD = new Acteur("Di Caprio", "Leonardo", "Homme", "11-11-1974");
+$CM = new Acteur("Murphy", "Cillian", "Homme", "24-05-1976");
+
+$KM = new Acteur(" Mc Lahchlan", "Kyme", "Homme", "22-02-1959");
+$MS = new Acteur("Sydow", "Max", "Homme", "08-03-2020");
+
 // TESTS : 
 
 
