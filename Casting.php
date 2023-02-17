@@ -53,7 +53,7 @@ class casting {
 
     public function __toString()
     {
-        return "<b>$this->_Acteur  a incarné  $this->_Role";
+        return "$this->_Acteur  a incarné  $this->_Role";
     }
 
 }   

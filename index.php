@@ -44,7 +44,7 @@ $FILM8 = new Film ( "Memento", "07-09-2000", "113min", $Rea2, $G3);
 $ROLFILM1PA = new Role ("Paul Atréides"); // Nb: joué par Kyle MacLahchlan
 $ROLFILM1DK = new Role ("Dr Kynes"); // Nb: joué par Max von Sydow
 
-$ROLFILM3DT = new Role ("Domnique"); // Nb: joué par Vin Diesel 
+$ROLFILM3DT = new Role ("Dominique Toreto"); // Nb: joué par Vin Diesel 
 $ROLFILM3OB = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
 $ROLFILM4DT = new Role ("Domnique"); // Nb: joué par Vin Diesel 
 $ROLFILM4OB = new Role ("Officier Brian"); // Nb: joué par Paul Walker 
@@ -93,3 +93,4 @@ echo $G2 -> afficherFilmparGenre();  // Afficher lees films par genre
 
 // echo $G3 -> afficherFilmparGenre(); 
 
+echo $VD -> AfficherCastingActeur();

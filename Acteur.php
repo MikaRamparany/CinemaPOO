@@ -45,7 +45,7 @@ class Acteur extends PersonneMere
 
     public function __toString()
     {
-        $result = " Titre : ";
+        $result = " L'acteur  ";
         return $result;
     }
 
