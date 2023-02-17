@@ -39,7 +39,7 @@ class Genre {
         $this->_ListeGenre[] = $GenreFilm;
         }
 
-        public function afficherFilmGenre()
+        public function afficherListeGenres()
         {
             $result = " GENRE  " .$this->_NomGenre.  " : <br>";
             foreach($this->_ListeGenre as $GenreFilm)
