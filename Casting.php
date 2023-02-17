@@ -14,7 +14,7 @@ class casting {
     $this -> _Acteur = $_Acteur;
     $this->_Acteur -> AjouterCastingActeur($this);
     $this -> _Role -> AjouterCasting($this);
-    $this -> _Film -> AjouterCasting($this);
+    $this -> _Film -> AjouterFilm($this);
 
     }
 
@@ -49,6 +49,11 @@ class casting {
     {
     $this -> _Acteur= $_Acteur;
    
+    }
+
+    public function __toString()
+    {
+        return "<b>$this->_Acteur  a incarné  $this->_Role";
     }
 
 }   
