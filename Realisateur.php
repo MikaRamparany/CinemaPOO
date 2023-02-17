@@ -30,19 +30,20 @@ class Realisateur extends PersonneMere
     $this->_AllFilms[] = $Film;
     }
 
-    public function afficherFilm()
+    public function afficherFilmRea()
     {
-        $result = " Les films réalisés par ". $this ." : <br>";
+        $result = " <br> <br> Les films réalisés par ". $this ." : <br>";
         foreach($this->_AllFilms as $Film)
         {
-           $result .= $Film . "<br>";
+           $result .=  $Film. "<br>" ;
         }
         return $result;
     }
     public function __toString()
     {
-        $result = $this->get_Prenom() . " " . $this->get_Nom();
+        $result = $this->get_Prenom() . "  " . $this->get_Nom();
         return $result;
     }
+    
 
 }

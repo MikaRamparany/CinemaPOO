@@ -20,7 +20,9 @@ public function __construct (string $_TitreFilm, $_DateSortie,  $_DureeFilm,  Re
         $this -> _DureeFilm = $_DureeFilm;  
         // $this-> _Casting = $_Casting;
         $this -> _Realisateur=$_Realisateur;
-        $this ->_Genre=$_Genre;
+        $this -> _Genre = $_Genre;
+        $this ->_Genre-> AddFilms ($this);
+        $this->_Realisateur->addFilm($this);
 
     }
 
@@ -115,4 +117,9 @@ public function AfficherInfoFilm()
     }
 
 
+public function __toString()
+    {
+        $result = " Titre : ".$this->get_TitreFilm() . " <br> Sortie : " . $this->get_DateSortie();
+        return $result;
+    }
 }

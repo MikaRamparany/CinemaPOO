@@ -3,12 +3,13 @@
 class Genre {
 
     private string $_NomGenre;
-    private array $_ListeGenre;
+    private array $_Lesfilms;
 
     public function __construct( string $_NomGenre)
     {
         $this-> _NomGenre =$_NomGenre;
-        $this->_ListeGenre = [];
+        $this->_Lesfilms = [];
+        
     } 
 
     //GETTER 
@@ -17,9 +18,9 @@ class Genre {
     {
         return  $this -> _NomGenre;
     }
-    function get_ListeGenres ()
+    function get_Films ()
     {
-    return $this-> _ListeGenre;
+    return $this-> _Lesfilms;
     }
 
     //SETTER
@@ -28,27 +29,31 @@ class Genre {
     {
        $this -> _NomGenre=$_NomGenre;
     }
-    function set_ListeGenre ($_ListeGenres)
+    function set_ListeGenre ($_Lesfilms)
     {
-    $this-> _ListeGenre=$_ListeGenres;
+    $this-> _Lesfilms=$_Lesfilms;
     return $this;
     }
 
-    public function AddgGenreFilm($GenreFilm)
+    public function AddFilms($FilmparGenre)
         {
-        $this->_ListeGenre[] = $GenreFilm;
+        $this->_Lesfilms[] = $FilmparGenre;
         }
 
-        public function afficherListeGenres()
+        public function afficherFilmparGenre()
         {
-            $result = " GENRE  " .$this->_NomGenre.  " : <br>";
-            foreach($this->_ListeGenre as $GenreFilm)
+            $result = " <br> <br> Voici les films du genre " .$this->_NomGenre.  " : <br>";
+            foreach($this->_Lesfilms as $FilmparGenre)
             {
-                $result .= $GenreFilm;
+                $result .= " Le film " .$FilmparGenre. "<br>";
             }
 
             return $result;
 
+        }
+        public function __toString()
+        {
+            return $this->_NomGenre;
         }
 }
 
