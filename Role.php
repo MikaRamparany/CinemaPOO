@@ -11,8 +11,7 @@ class Role {
         public function __construct( $_Role)
         {
         $this -> _Role = $_Role;
-        $this -> _Casting =[]; //! A compléter après avoir fait la feuille de classe Casting
-
+        $this -> _Casting =[]; 
         }
 
 
