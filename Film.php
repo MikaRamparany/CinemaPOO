@@ -5,7 +5,7 @@ class Film {
     private string $_TitreFilm;
     private  $_DateSortie;
     private  $_DureeFilm; 
-    private $_Casting;
+    private array $_Casting;
     private   $_Realisateur; 
     private  $_Genre; 
     
@@ -18,7 +18,7 @@ public function __construct (string $_TitreFilm, $_DateSortie,  $_DureeFilm,  Re
         $this -> _TitreFilm=$_TitreFilm;
         $this -> _DateSortie = $_DateSortie;
         $this -> _DureeFilm = $_DureeFilm;  
-        // $this-> _Casting = $_Casting;
+        $this-> _Casting = [];
         $this -> _Realisateur=$_Realisateur;
         $this -> _Genre = $_Genre;
         $this ->_Genre-> AddFilms ($this);
@@ -105,7 +105,10 @@ public function __construct (string $_TitreFilm, $_DateSortie,  $_DureeFilm,  Re
     //FONCTIONS 
 
 
-
+    public function AjouterFilm(Casting $Casting)
+    {
+    $this->_Casting[] = $Casting;
+    }
   
 public function AfficherInfoFilm()
     {

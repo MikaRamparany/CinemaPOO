@@ -1,9 +1,9 @@
 <?php
 
 class casting {
-    private   $_Film;
-    private  $_Role;
-    private  $_Acteur;
+    private Film $_Film;
+    private Role $_Role;
+    private Acteur $_Acteur;
 
     public function __construct ($_Film, $_Role, $_Acteur) 
     
@@ -11,7 +11,7 @@ class casting {
 
     $this -> _Film = $_Film;
     $this -> _Role = $_Role;
-    $this -> $_Acteur = $_Acteur;
+    $this -> _Acteur = $_Acteur;
     $this->_Acteur -> AjouterCastingActeur($this);
     $this -> _Role -> AjouterCasting($this);
     $this -> _Film -> AjouterCasting($this);

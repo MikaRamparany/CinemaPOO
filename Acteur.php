@@ -5,7 +5,7 @@
 class Acteur extends PersonneMere 
     {
 
-        private  $_Casting;
+        private  array $_Casting;
 
     public function __construct(string $_Nom, string $_Prenom, string $_Sexe, $_DateNaissance)
     {
@@ -34,7 +34,7 @@ class Acteur extends PersonneMere
     public function AfficherCastingActeur() // Afficher dans quel films a joué l'acteur.
 
     {
-        $result = " Les films dans lesquel " . $this->get_Prenom() . "  " . $this->get_Nom() . " a joué sont : <br> <br>" . $this-> _Casting -> get_Film (); 
+        $result = " Les films dans lesquel " . $this->get_Prenom() . "  " . $this->get_Nom() . " a joué sont : <br> <br>" . $this->_Casting->get_Film (); 
 
         foreach ($this->_Casting as $Casting) 
         {
