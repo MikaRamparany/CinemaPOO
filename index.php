@@ -46,6 +46,12 @@ $FILM8 = new Film ( "Memento", "07-09-2000", "113min", $Rea2, $G3);
 
 $FILM1-> afficherInfoFilm(); // infos sur le film  
 
-echo  $Rea3 -> afficherFilmRea(); // afficher les films du réalisateur 
+$FILM8-> afficherInfoFilm();
 
-echo $G2 -> afficherFilmparGenre();  // Afficher le genre du film
+echo  $Rea3 -> afficherFilmRea(); // Afficher les films du réalisateur 
+echo  $Rea2 -> afficherFilmRea();
+
+
+echo $G2 -> afficherFilmparGenre();  // Afficher lees films par genre
+
+echo $G3 -> afficherFilmparGenre(); 
