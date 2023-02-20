@@ -45,7 +45,7 @@ class Acteur extends PersonneMere
 
     public function __toString()
     {
-        $result = " L'acteur  ";
+        $result = $this->get_Prenom(). " ". $this->get_Nom(). " ";
         return $result;
     }
 
