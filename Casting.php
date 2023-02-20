@@ -53,7 +53,8 @@ class casting {
 
     public function __toString()
     {
-        return "$this->_Acteur  a incarné  $this->_Role";
+        return  " - Le film $this->_Film  " . ", dans lequel il a incarné " .$this->_Role;
     }
 
-}   
+}
+
