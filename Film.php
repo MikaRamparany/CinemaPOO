@@ -122,7 +122,7 @@ public function AfficherInfoFilm()
 
 public function __toString()
     {
-        $result = " Titre : ".$this->get_TitreFilm() . " <br> Sortie : " . $this->get_DateSortie();
+        $result = $this->get_TitreFilm() . " sorti le " . $this->get_DateSortie();
         return $result;
     }
 }
